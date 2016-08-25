@@ -51,6 +51,7 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
+focus_follows_mouse no
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -185,4 +186,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 
 # colors
-client.focused #859900 #505050 #fdf6e3 #
+client.focused #859900 #505065 #fdf6e3 #
+
+# run on startup
+exec --no-startup-id syndaemon -i 0.1 -t -K -R
