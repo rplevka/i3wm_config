@@ -190,3 +190,4 @@ client.focused #859900 #505065 #fdf6e3 #
 
 # run on startup
 exec --no-startup-id syndaemon -i 0.1 -t -K -R
+exec --no-startup-id nm-applet
